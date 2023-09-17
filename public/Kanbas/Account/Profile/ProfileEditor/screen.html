@@ -1,4 +1,4 @@
-<table border="1", width="100%">
+<table width="100%">
     <tr>
         <td valign ="top">
             <!--Kanbas Navigation-->
@@ -66,21 +66,71 @@
         </td>
         <td valign="top">
             <!--Profile Editor-->
-            <h1>Profile Editor</h1>
+            <h2>Alice Wonderland</h2>
             <form action="/Kanbas/Account/Profile/screen.html">
-                <label>Name:</label>
-                <input type="text" value="Alice Wonderland"/>
+                <label>Name:*</label><input type="text" value="Alice Wonderland"/>
                 <br />
+                <label>Pronouns:</label>
+                <select>
+                    <option value="she/her">She/Her</option>
+                    <option value="he/him">He/Him</option>
+                    <option value="they/them">They/Them</option>
+                    <option value="other">Other</option>
+                    <option value="prefer not to specify">Prefer not to specify</option>
+                </select>
                 <br />
-                <label>Bio:</label>
+                <label>Title:</label><input type="text" />
                 <br />
+
+                <h3>Contact</h3>
+                <p>No registered services, you can add some on the <a href="#">settings</a> page.</p>
+                
+                <h3>Biography</h3>
+                <p>Followed the white rabbit</p>
                 <textarea>Followed the white rabbit</textarea>
                 <br />
+                <h3>Links</h3>
+                <ul>
+                    <li>
+                        <a href="#">Youtube - Links to an external site.</a>
+                    </li>
+                </ul>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th></th>
+                            <th>URL</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="text", placeholder="YouTube"/>
+                            </td>
+                            <td> > </td>
+                            <td>
+                                <input type="text", placeholder="https://www.youtube.com/"/>
+                            </td>
+                            <td>
+                                <a href="#">Remove</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button>Add another link</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
                 <br />
+
+                <button>Cancel</button>
                 <button>Save Profile</button>
                 <br />
-                <br />
-                <button>Cancel</button>
+                <button>Edit Profile</button>
+                <button>Cancel Editing</button>
             </form>
         </td>
     </tr>
