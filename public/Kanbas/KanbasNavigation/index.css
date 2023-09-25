@@ -1,0 +1,28 @@
+wd-kanbas-navigation {
+    display: block;
+    list-style-type: none;
+    margin-block: 5px;
+    padding-block: 5px;
+    background: black;
+    text-decoration: none;
+    color: red;
+    padding: 0.5rem 1rem;
+}
+
+
+wd-kanbas-navigation.list-group-item{
+    position: relative;
+    display: block;
+    padding: 0.5rem 1rem;
+    color: red;
+    text-decoration: none;
+    background-color: black;
+    border: none;
+}
+
+/* ul.wd-kanbas-navigation.list-group-item a{
+    color: red;
+    text-decoration: none;
+    border: none;
+} */
+
