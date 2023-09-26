@@ -1,4 +1,4 @@
-wd-kanbas-navigation {
+wd-kanbas-navigation.list-group {
     display: block;
     list-style-type: none;
     margin-block: 5px;
@@ -8,6 +8,8 @@ wd-kanbas-navigation {
     color: red;
     padding: 0.5rem 1rem;
 }
+
+
 
 
 wd-kanbas-navigation.list-group-item{
@@ -20,9 +22,9 @@ wd-kanbas-navigation.list-group-item{
     border: none;
 }
 
-/* ul.wd-kanbas-navigation.list-group-item a{
+ ul.wd-kanbas-navigation.list-group-item a{
     color: red;
     text-decoration: none;
     border: none;
-} */
+} 
 
