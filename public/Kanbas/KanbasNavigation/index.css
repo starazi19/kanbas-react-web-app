@@ -1,30 +1,35 @@
-wd-kanbas-navigation.list-group {
-    display: block;
-    list-style-type: none;
-    margin-block: 5px;
-    padding-block: 5px;
-    background: black;
-    text-decoration: none;
-    color: red;
-    padding: 0.5rem 1rem;
+.wd-col-20pc {
+    float: left;
+    width: 20%;
 }
 
+.wd-col-60pc {
+    float: left;
+    width: 60%;
+}
 
-
-
-wd-kanbas-navigation.list-group-item{
-    position: relative;
-    display: block;
-    padding: 0.5rem 1rem;
-    color: red;
-    text-decoration: none;
+.wd-kanbas-navigator {
+    color: white;
+    padding: 0px;
+    width: 80px;
+    font-size: 0.8em;
     background-color: black;
-    border: none;
 }
 
- ul.wd-kanbas-navigation.list-group-item a{
-    color: red;
-    text-decoration: none;
-    border: none;
-} 
+.wd-kanbas-navigator li {
+    list-style-type: none;
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+}
 
+.wd-kanbas-navigator li a {
+    color: white;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.wd-kanbas-navigator li a.active {
+    color: red;
+    background-color: white;
+}

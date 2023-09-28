@@ -8,6 +8,33 @@
     width: 60%;
 }
 
+.wd-kanbas-navigator {
+    color: white;
+    padding: 0px;
+    width: 80px;
+    font-size: 0.8em;
+    background-color: black;
+}
+
+.wd-kanbas-navigator li {
+    list-style-type: none;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: black;
+}
+
+.wd-kanbas-navigator li a {
+    color: white;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.wd-kanbas-navigator li a:active {
+    color: red;
+    background-color: white;
+}
+
+
 ul.wd-course-navigation.list-group {
     border-radius: 0px;
     list-style-type: none;
@@ -35,4 +62,8 @@ ul.wd-course-navigation a {
 
 ul.wd-course-navigation .list-group-item.active a {
     color: black;
+}
+
+card-title {
+    font-size: 
 }
