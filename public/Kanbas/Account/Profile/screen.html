@@ -1,83 +1,98 @@
-<table width="100%">
-    <tr>
-        <td valign ="top">
-            <!--Kanbas Navigation-->
-            <ul>
-                <li>    
-                    <a href ="/Kanbas/Account/Profile/screen.html">Account</a>
-                </li>
-                <li>
-                    <a href="#">Dashboard</a>
-                </li>
-                <li>
-                    <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
-                </li>
-                <li>
-                    <a href="#">Calendar</a>
-                </li>
-                <li>
-                    <a href="#">Inbox</a>
-                </li>
-                <li>    
-                    <a href="#">History</a>
-                </li>
-                <li>
-                    <a href="#">Studio</a>
-                </li>
-                <li>
-                    <a href="#">Commons</a>
-                </li>
-                <li>
-                    <a href="#">Help</a>
-                </li>
-            </ul>
-        </td>
-        <td valign="top">
-            <!--Account Navigation-->
-            <ul>
-                <li>
-                    <a href="#">Notifications</a>
-                </li>
-                <li>
-                    <a href="/Kanbas/Account/Profile/screen.html">Profile</a>
-                </li>
-                <li>
-                    <a href="#">Files</a>
-                </li>
-                <li>
-                    <a href="#">Settings</a>
-                </li>
-                <li>
-                    <a href="#">ePortfolios</a>
-                </li>
-                <li>
-                    <a href="#">Shared Content</a>
-                </li>
-                <li>
-                    <a href="#">The Hub</a>
-                </li>
-                <li>
-                    <a href="#">Qwickly Course Tools</a>
-                </li>
-                <li>
-                    <a href="#">Global Announcements</a>
-                </li>
-            </ul>
-        </td>
-        <td valign="top">
-            <!--Profile-->
-            <header>Alice Wonderland's Profile</header>
-            <h2>Alice Wonderland</h2>
-            <form action="/Kanbas/Account/Profile/ProfileEditor/screen.html">
-                <button>Edit Profile</button>
-            </form>
-            <!--Profile Info-->
-            <h3>Contact</h3>
-            <p>No registered services, you can add some on the <a href="#">settings</a> page.</p>
-            <h3>Biography</h3>
-            <p>Ran away from home, met the Mad Hatter, not a fan of hearts</p>
-            <h3>Links</h3>
-            <p><a href="#">LinkedIn</a></p>
-        </td>
-    </tr>
-</table>
+<html>
+<head>
+    <link href="/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/Kanbas/Courses/CourseNavigation/index.css" rel="stylesheet"/>
+    <link href="/Kanbas/KanbasNavigation/index.css" rel="stylesheet"/>
+    <link href="/public/vendors/fontawesome/css/fontawesome.min.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col d-none d-lg-block">
+                <!--Kanbas Navigation-->
+                <ul class="wd-kanbas-navigator">
+                    <li class="active">
+                      <a href="/Kanbas/Account/Profile/screen.html">Account</a>
+                    </li>
+                    <li>
+                        <a href="/Kanbas/Dashboard/index.html">Dashboard</a>
+                      </li>
+                    <li>
+                      <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
+                    </li>
+                    <li>
+                      <a href="#">Calendar</a>
+                    </li>
+                    <li>
+                      <a href="#">Inbox</a>
+                    </li>
+                    <li>
+                      <a href="#">History</a>
+                    </li>
+                    <li>
+                      <a href="#">Studio</a>
+                    </li>
+                    <li>
+                        <a href="#">Commons</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                  </ul>
+            </div>
+            <div class="col d-none d-md-block">
+                <!--Account Navigation-->
+                <ul class="wd-course-navigation list-group">
+                    <li class="list-group-item">
+                        <a href="#">Notifications</a>
+                    </li>
+                    <li class="list-group-item active">
+                        <a href="/Kanbas/Account/Profile/screen.html">Profile</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">Files</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">Settings</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">ePortfolios</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">Shared Content</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">The Hub</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">Qwickly Course Tools</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">Global Announcements</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <!--Profile Info-->
+                <header>Alice Wonderland's Profile
+                <form action="/Kanbas/Account/Profile/ProfileEditor/screen.html">
+                    <button class="btn-outline-secondary">
+                        Edit Profile</button>
+                </form></header>
+                <i class="fa fa-user fa-xl"></i>
+                <h2>Alice Wonderland</h2>
+                <h3>Contact</h3>
+                <p>No registered services, you can add some on the <a href="#">settings</a> page.</p>
+                <h3>Biography</h3>
+                <p>Ran away from home, met the Mad Hatter, not a fan of hearts</p>
+                <h3>Links</h3>
+                <p><a href="#">LinkedIn</a></p>
+                
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

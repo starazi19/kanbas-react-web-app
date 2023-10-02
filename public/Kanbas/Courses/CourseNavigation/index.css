@@ -1,38 +1,26 @@
-.wd-col-20pc {
-    float: left;
-    width: 20%;
-}
-
-.wd-col-60pc {
-    float: left;
-    width: 60%;
-}
-
-ul.wd-course-navigation.list-group {
+ul.wd-course-navigation .list-group{
     border-radius: 0px;
-    list-style-type: none;
-}
-
-ul.wd-course-navigation .list-group-item {
+    margin: none;
+  }
+  ul.wd-course-navigation .list-group-item {
     border: none;
-    padding-left: 2px;
     list-style-type: none;
-    padding-bottom: 5px;
-
-}
-
-ul.wd-course-navigation .list-group-item.active {
+    font-size: .8em;
+  }
+  
+  ul.wd-course-navigation .list-group-item.active {
     color: black;
     background-color: white;
     border: none;
     border-left: 2px solid black;
-}
-
-ul.wd-course-navigation a {
+    list-style-type: none;
+  }
+  
+  ul.wd-course-navigation a {
     color: red;
     text-decoration: none;
-}
-
-ul.wd-course-navigation .list-group-item.active a {
+  }
+  
+  ul.wd-course-navigation .list-group-item.active a {
     color: black;
-}
+  }

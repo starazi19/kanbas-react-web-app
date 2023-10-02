@@ -1,110 +1,202 @@
 <html>
-  <head>
-    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="/Kanbas/Courses/CourseNavigation/index.css" />
-  </head>
-  <body>
-    <table border="1" width="100%">
-      <tr>
-        <td valign="top">
-          <ul>
-            <li>
-              <a href="#">Northeastern</a>
-            </li>
-            <li>
-              <a href="/Kanbas/Account/Profile/screen.html">Account</a>
-            </li>
-            <li>
-              <a href="/Kanbas/Dashboard/screen.html">Dashboard</a>
-            </li>
-            <li>
-              <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
-            </li>
-            <li>
-              <a href="#">Inbox</a>
-            </li>
-          </ul>
-        </td>
-        <td valign="top">
-          <!-- <link rel="stylesheet" href="/styles.css" /> -->
-          <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
-          <link rel="stylesheet" href="index.css" />
-          <ul class="wd-course-navigation list-group">
-            <li class="list-group-item">
-              <a href="/Kanbas/Courses/Home/screen.html">Home</a>
-            </li>
-            <li class="list-group-item">
-              <a href="/Kanbas/Courses/Modules/screen.html">Modules</a>
-            </li>
-            <li class="list-group-item">
-              <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
-            </li>
-            <li class="list-group-item">
-              <a href="/Kanbas/Courses/Piazza/screen.html">Piazza</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#">Zoom</a>
-            </li>
-            <li class="list-group-item active">
-              <a href="/Kanbas/Courses/Grades/screen.html">Grades</a>
-            </li>
-          </ul>
-        </td>
-        <td valign="top">
-          <h3>Student Names</h3>
-          <input
-            type="text"
-            placeholder="joe, jane"
-            title="Type the usernames of students you want to filter"
-          />
-          <h3>Assignment Names</h3>
-          <input type="text" />
-          <br />
-          <br />
-          <table width="100%" border="1">
-            <thead>
-              <tr>
-                <th>Student Name</th>
-                <th>A1 - HTML</th>
-                <th>A2 - CSS</th>
-                <th>A3 - JS</th>
-                <th>A4 - PHP</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>John Doe</td>
-                <td>100%</td>
-                <td>100%</td>
-                <td>100%</td>
-                <td>100%</td>
-              </tr>
-              <tr>
-                <td>Jane Doe</td>
-                <td>100%</td>
-                <td>100%</td>
-                <td>100%</td>
-                <td>100%</td>
-              </tr>
-              <tr>
-                <td>John Smith</td>
-                <td>100%</td>
-                <td>100%</td>
-                <td>100%</td>
-                <td>100%</td>
-              </tr>
-              <tr>
-                <td>Jane Smith</td>
-                <td>100%</td>
-                <td>100%</td>
-                <td>100%</td>
-                <td>100%</td>
-              </tr>
-            </tbody>
-            <tfoot></tfoot>
-          </table>
-        </td>
-      </tr>
-    </table>
-  </body>
+<head>
+    <link href="/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/Kanbas/Courses/CourseNavigation/index.css" rel="stylesheet"/>
+    <link href="/Kanbas/KanbasNavigation/index.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/fontawesome.min.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col d-none d-lg-block">
+                <!--Kanbas Navigation-->
+                <ul class="wd-kanbas-navigator">
+                    <li>
+                      <a href="/Kanbas/Account/Profile/screen.html">Account</a>
+                    </li>
+                    <li>
+                        <a href="/Kanbas/Dashboard/index.html">Dashboard</a>
+                      </li>
+                    <li class="active">
+                      <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
+                    </li>
+                    <li>
+                      <a href="#">Calendar</a>
+                    </li>
+                    <li>
+                      <a href="#">Inbox</a>
+                    </li>
+                    <li>
+                      <a href="#">History</a>
+                    </li>
+                    <li>
+                      <a href="#">Studio</a>
+                    </li>
+                    <li>
+                        <a href="#">Commons</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                  </ul>
+            </div>
+            <div class="col d-none d-md-block">
+                <!--Course Navigation Grades active-->
+                <ul class="wd-course-navigation list-group">
+                  <li class="list-group-item">
+                    <a href="/Kanbas/Courses/Home/screen.html">Home</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="/Kanbas/Courses/Home/Screen.html">Modules</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">Piazza</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">Zoom Meetings</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="/Kanbas/Courses/Assignments/index.html">Assignments</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">Quizzes</a>
+                  <li class="list-group-item active">
+                    <a href="/Kanbas/Courses/Grades/index.html">Grades</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">People</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">PanoptoVideo</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">Discussions</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">Announcements</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">Pages</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">Files</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">Rubrics</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">Outcomes</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">Collaborations</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">Syllabus</a>
+                  </li>
+                </ul>
+            </div>
+            <div class="col">
+              <div class="btn-group ">
+                  <button class="btn-outline-secondary">Import</button>
+                  <button class="btn-outline-secondary dropdown-toggle">Export</button>
+                  <button class="btn-outline-secondary">x</button>  
+              </div>
+              <div class="row">
+                  <label for="studentnames" class="form-label">Student Names</label>
+                  <select id="studentnames" class="form-select">
+                    <option selected value="Search Students">
+                      <i class="fa fa-search"></i>
+                      Search Students</option>
+                  </select>
+
+                  <label for="assignmentnames" class="form-label">Assignment Names</label>
+                  <select id="assignmentnames" class="form-select">
+                    <option selected value="Search Assignments">
+                      <i class="fa fa-search"></i>
+                      Search Assignments</option>
+                  </select>
+              </div>
+              <div class="row">
+                <!--Grades Table-->
+                <table class="table table-striped table-responsive">
+                  <thead>
+                      <tr>
+                          <th>Student Name</th>
+                          <th>A1 SETUP <br /> Out of 100</th>
+                          <th>A2 HTML <br /> Out of 100</th>
+                          <th>A3 CSS <br /> Out of 100</th>
+                          <th>A4 BOOTSTRAP <br /> Out of 100</th>
+                          <th>A5 REACT <br /> Out of 100</th>
+                          <th>A6 JAVASCRIPT <br /> Out of 100</th>
+                          <th>A7 STATE <br /> Out of 100</th>
+                          <th>A8 REDUX <br /> Out of 100</th>
+                          <th>A9 NODE <br /> Out of 100</th>
+                          <th>A10 MONGO <br /> Out of 100</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>Jane Doe</td>
+                          <td>100%</td>
+                          <td>85%</td>
+                          <td>95%</td>
+                          <td>100%</td>
+                          <td>100%</td>
+                          <td>98%</td>
+                          <td>99%</td>
+                          <td>88%</td>
+                          <td>97%</td>
+                          <td>100%</td>
+                      </tr>
+                      <tr>
+                          <td>John Doe</td>
+                          <td>99%</td>
+                          <td>87%</td>
+                          <td>90%</td>
+                          <td>
+                              <input type="text" class="form-control" placeholder="90%" />
+                          </td>
+                          <td>98%</td>
+                          <td>100%</td>
+                          <td>88%</td>
+                          <td>87%</td>
+                          <td>99%</td>
+                          <td>78%</td>
+                      </tr>
+                      <tr>
+                          <td>Johnny Appleseed</td>
+                          <td>88%</td>
+                          <td>96%</td>
+                          <td>77%</td>
+                          <td>100%</td>
+                          <td>98%</td>
+                          <td>100%</td>
+                          <td>77%</td>
+                          <td>89%</td>
+                          <td>99%</td>
+                          <td>98%</td>
+                      </tr>
+                      <tr>
+                          <td>John Smith</td>
+                          <td>88%</td>
+                          <td>99%</td>
+                          <td>67%</td>
+                          <td>93%</td>
+                          <td>70%</td>
+                          <td>99%</td>
+                          <td>100%</td>
+                          <td>87%</td>
+                          <td>88%</td>
+                          <td>99%</td>
+                      </tr>
+                  </tbody>
+                  </table>
+              </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
 </html>
