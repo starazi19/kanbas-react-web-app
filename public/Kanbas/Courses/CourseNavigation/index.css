@@ -24,3 +24,7 @@ ul.wd-course-navigation .list-group{
   ul.wd-course-navigation .list-group-item.active a {
     color: black;
   }
+
+  /* .wd-modules.list-group-flush {
+    border-left: 2px solid green;
+  } */

@@ -10,9 +10,10 @@
 
 ul.wd-kanbas-navigator {
     padding: 0px;
-    width: 80px;
     font-size: 0.8em;
     background-color: black;
+    width: 80px;
+    height: 100vh;
 }
 
 ul.wd-kanbas-navigator li {

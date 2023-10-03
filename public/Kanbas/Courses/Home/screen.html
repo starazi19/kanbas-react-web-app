@@ -3,12 +3,12 @@
     <link href="/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="/Kanbas/Courses/CourseNavigation/index.css" rel="stylesheet"/>
     <link href="/Kanbas/KanbasNavigation/index.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div class="container">
         <div class="row">
-            <div class="col d-none d-lg-block">
+            <div class="col d-none d-lg-block" style="float: left">
                 <!--Kanbas Navigation-->
                 <ul class="wd-kanbas-navigator">
                     <li>
@@ -40,7 +40,7 @@
                     </li>
                   </ul>
             </div>
-            <div class="col d-none d-md-block">
+            <div class="col d-none d-md-block" style="float: left">
                 <!--Course Navigation-->
                 <ul class="wd-course-navigation list-group">
                     <li class="list-group-item">
@@ -95,7 +95,7 @@
                     </li>
                   </ul>
             </div>
-            <div class="col">
+            <div class="col d-lg-10">
                 <div class="btn-group">
                     <button class="btn-outline-secondary">Collapse All</button>
                     <button class="btn-outline-secondary">View Progress</button>
@@ -186,7 +186,9 @@
                 <button class="btn-light">Unpublish</button>
 
                 <button class="btn-success">
-                    Published</button>
+                    Published
+                    <i class="fa-solid fa-circle-check"></i>
+                </button>
                 <div class="form-group">
                     <button class="btn-outline-secondary">Import Existing Content</button>
                     <button class="btn-outline-secondary">Import from Commons</button>
@@ -196,10 +198,9 @@
                     <button class="btn-outline-secondary">New Analytics</button>
                     <button class="btn-outline-secondary">View Course Analytics</button>
                 </div>
-
             </div>
         </div>
-    </div>
+
 </body>
 
 </html>
