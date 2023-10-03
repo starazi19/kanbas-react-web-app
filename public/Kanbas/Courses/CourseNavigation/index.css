@@ -25,6 +25,54 @@ ul.wd-course-navigation .list-group{
     color: black;
   }
 
-  /* .wd-modules.list-group-flush {
+  .wd-modules{
+    margin-top: 20px;
+  }
+
+  .wd-modules h4 {
+    text-indent: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: auto;
+    color: #2D3B45;
+    background-color: #f5f5f5;
+    padding: 12px 6px;
+    display: inline-block;
+    max-width: 100%;
+    border-color: #f5f5f5;
+    padding-right: 100%;
+  }
+
+  .wd-modules .list-group-item {
+    border: 1px solid #c7cdd1;
+    background: #f5f5f5;
+    padding: 12px 6px 12px 10px;
+    box-sizing: border-box;
+    line-height: 1.5;
     border-left: 2px solid green;
-  } */
+  }
+
+  .wd-modules .list-group-item-secondary {
+    color: #41464b;
+    background-color: #e2e3e5;
+    border-left: none;
+    border: 1px solid black;
+  }
+
+  .wd-modules .list-group-item h5{
+    font-size: 1rem;
+    font-weight: regular;
+    text-decoration: none;
+    color: #2D3B45;
+  }
+
+  .wd-modules .list-group-item a{
+    text-decoration: none;
+  }
+
+  .wd-modules .list-group-item p{
+    font-size: 0.8rem;
+    font-weight: regular;
+    text-decoration: none;
+    color: #3b4f5e;
+  }

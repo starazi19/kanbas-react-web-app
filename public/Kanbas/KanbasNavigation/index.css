@@ -13,7 +13,7 @@ ul.wd-kanbas-navigator {
     font-size: 0.8em;
     background-color: black;
     width: 80px;
-    height: 100vh;
+    max-height: 100%;
 }
 
 ul.wd-kanbas-navigator li {
@@ -30,9 +30,22 @@ ul.wd-kanbas-navigator li a {
     text-decoration: none;
 }
 
-ul.wd-kanbas-navigator li.active a {
+ul.wd-kanbas-navigator li.active {
     color: red;
     background-color: white;
     padding: 5px;
 }
 
+ul.wd-kanbas-navigator li.active a {
+    color: red;
+    background-color: white;
+    padding: 2px;
+}
+
+.wd-kanbas-navigator li.active i{
+    color: grey;
+}
+
+.wd-kanbas-navigator li i{
+    color: red;
+}

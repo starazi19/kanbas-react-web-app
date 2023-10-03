@@ -8,39 +8,57 @@
 
 <body>
         <div class="row">
-            <div class="col d-none d-lg-block" style="float: left">
-                <!--Kanbas Navigation-->
-                <ul class="wd-kanbas-navigator">
-                    <li>
-                      <a href="/Kanbas/Account/Profile/screen.html">Account</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Dashboard/index.html">Dashboard</a>
-                      </li>
-                    <li class="active">
-                      <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
-                    </li>
-                    <li>
-                      <a href="#">Calendar</a>
-                    </li>
-                    <li>
-                      <a href="#">Inbox</a>
-                    </li>
-                    <li>
-                      <a href="#">History</a>
-                    </li>
-                    <li>
-                      <a href="#">Studio</a>
-                    </li>
-                    <li>
-                        <a href="#">Commons</a>
-                    </li>
-                    <li>
-                        <a href="#">Help</a>
-                    </li>
-                  </ul>
+            <div class="col-1 d-none d-lg-block" style="float: left">
+              <h1 style="color: red; float: left; background-color: black; padding: 7px; font-family: 'Times New Roman', Times, serif; text-indent: 10px; font-size: 4rem;">N</h1>
+              <ul class="wd-kanbas-navigator">
+                <li>
+                  <a href="/Kanbas/Account/Profile/screen.html">
+                  <i class="fa-solid fa-user"></i> <br />
+                  Account</a>
+                </li>
+                <li class="active">
+                  <a href="/Kanbas/Dashboard/index.html">
+                  <i class="fa-solid fa-gauge-high"></i> <br />
+                    Dashboard</a>
+                </li>
+                <li>
+                  <a href="/Kanbas/Courses/Home/screen.html">
+                  <i class="fa-solid fa-book"></i> <br />
+                    Courses</a>
+                </li>
+                <li>
+                  <a href="#">
+                  <i class="fa-solid fa-calendar-days"></i> <br />
+                    Calendar</a>
+                </li>
+                <li>
+                  <a href="#">
+                  <i class="fa-solid fa-inbox"></i> <br />
+                    Inbox</a>
+                </li>
+                <li>
+                  <a href="#">
+                  <i class="fa-solid fa-clock"></i> <br />
+                    History</a>
+                </li>
+                <li>
+                  <a href="#">
+                  <i class="fa-solid fa-desktop"></i> <br />
+                    Studio</a>
+                </li>
+                <li>
+                    <a href="#">
+                    <i class="fa-solid fa-right-from-bracket"></i> <br />
+                      Commons</a>
+                </li>
+                <li>
+                    <a href="#">
+                    <i class="fa-solid fa-circle-question"></i> <br />
+                      Help</a>
+                </li>
+              </ul>
             </div>
-            <div class="col d-none d-md-block" style="float: left">
+            <div class="col-1 d-none d-md-block" style="float: left">
                 <!--Course Navigation-->
                 <ul class="wd-course-navigation list-group">
                     <li class="list-group-item">
@@ -95,7 +113,10 @@
                     </li>
                   </ul>
             </div>
-            <div class="col d-lg-10">
+            <div class="col d-lg-12">
+              <div class="row">
+                <i class="fa fa-"
+              </div>
                 <div class="btn-group">
                     <button class="btn-outline-secondary">Collapse All</button>
                     <button class="btn-outline-secondary">View Progress</button>
@@ -107,7 +128,7 @@
                         <a class="dropdown-item" href="#">Unpublish</a>
                     </div>
                 </div>
-                <ul class="list-group-flush">
+                <ul class="wd-modules list-group-flush">
                     <li class="list-group-item">
                         <ul class="list-group-flush">
                             <li class="list-group-item"> <h5>Week 0 - INTRO</h5>
@@ -181,14 +202,11 @@
                 </ul>
                 
             </div>
-            <div class="col d-none d-lg-block">
+            <div class="col-2 d-none d-lg-block">
                 <h5>Course Status</h5>
                 <button class="btn-light">Unpublish</button>
-
-                <button class="btn-success">
-                    Published
-                    <i class="fa-solid fa-circle-check"></i>
-                </button>
+                <button class="btn-success">Published
+                    <i class="fa-solid fa-circle-check"></i></button>
                 <div class="form-group">
                     <button class="btn-outline-secondary">Import Existing Content</button>
                     <button class="btn-outline-secondary">Import from Commons</button>
