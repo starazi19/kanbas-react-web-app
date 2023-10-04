@@ -1,6 +1,6 @@
 <html>
 <head>
-    <link href="/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/Kanbas/Courses/CourseNavigation/index.css" rel="stylesheet"/>
     <link href="/Kanbas/KanbasNavigation/index.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -8,39 +8,58 @@
 
 <body>
     <div class="row">
-        <div class="col-lg-1 d-none d-md-block">
+        <div class="col-1 d-none d-lg-block">
             <!--Kanbas Navigation-->
+            <h1 style="color: red; float: left; background-color: black; padding: 7px; font-family: 'Times New Roman', Times, serif; text-indent: 10px; font-size: 4rem;">N</h1>
             <ul class="wd-kanbas-navigator">
-                <li class="active">
-                    <a href="/Kanbas/Account/Profile/screen.html">Account</a>
-                </li>
-                <li>
-                    <a href="/Kanbas/Dashboard/index.html">Dashboard</a>
-                    </li>
-                <li>
-                    <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
-                </li>
-                <li>
-                    <a href="#">Calendar</a>
-                </li>
-                <li>
-                    <a href="#">Inbox</a>
-                </li>
-                <li>
-                    <a href="#">History</a>
-                </li>
-                <li>
-                    <a href="#">Studio</a>
-                </li>
-                <li>
-                    <a href="#">Commons</a>
-                </li>
-                <li>
-                    <a href="#">Help</a>
-                </li>
-                </ul>
+            <li class="active">
+                <a href="/Kanbas/Account/Profile/screen.html">
+                <i class="fa-solid fa-user"></i> <br />
+                Account</a>
+            </li>
+            <li>
+                <a href="/Kanbas/Dashboard/index.html">
+                <i class="fa-solid fa-gauge-high"></i> <br />
+                Dashboard</a>
+            </li>
+            <li>
+                <a href="/Kanbas/Courses/Home/screen.html">
+                <i class="fa-solid fa-book"></i> <br />
+                Courses</a>
+            </li>
+            <li>
+                <a href="#">
+                <i class="fa-solid fa-calendar-days"></i> <br />
+                Calendar</a>
+            </li>
+            <li>
+                <a href="#">
+                <i class="fa-solid fa-inbox"></i> <br />
+                Inbox</a>
+            </li>
+            <li>
+                <a href="#">
+                <i class="fa-solid fa-clock"></i> <br />
+                History</a>
+            </li>
+            <li>
+                <a href="#">
+                <i class="fa-solid fa-desktop"></i> <br />
+                Studio</a>
+            </li>
+            <li>
+                <a href="#">
+                <i class="fa-solid fa-right-from-bracket"></i> <br />
+                    Commons</a>
+            </li>
+            <li>
+                <a href="#">
+                <i class="fa-solid fa-circle-question"></i> <br />
+                    Help</a>
+            </li>
+            </ul>
         </div>
-        <div class="col-4 d-none d-md-block">
+        <div class="col-1 d-none d-md-block">
             <!--Account Navigation-->
             <ul class="wd-course-navigation list-group">
                 <li class="list-group-item">
@@ -74,18 +93,24 @@
         </div>
         <div class="col d-lg-10">
             <!--Profile Info-->
-            <header>Alice Wonderland's Profile
+            <header>
+                <i class="fa-solid fa-grip-lines"></i>
+                Alice Wonderland's Profile
+            </header>
+
             <form action="/Kanbas/Account/Profile/ProfileEditor/screen.html">
-                <button class="btn-outline-secondary" style="float: right">
+                <button class="btn btn-outline-secondary" style="float: right">
                     Edit Profile</button>
-            </form></header>
-            <i class="fa fa-user fa-solid"></i>
-            <h2>Alice Wonderland</h2>
-            <h3>Contact</h3>
+            </form>
+
+            <i class="fa-regular fa-circle-user fa-2xl" style="float: left; display: block;"></i>
+            <br />
+            <h4>Alice Wonderland</h4>
+            <h5>Contact</h5>
             <p>No registered services, you can add some on the <a href="#">settings</a> page.</p>
-            <h3>Biography</h3>
+            <h5>Biography</h5>
             <p>Ran away from home, met the Mad Hatter, not a fan of hearts</p>
-            <h3>Links</h3>
+            <h5>Links</h5>
             <p><a href="#">LinkedIn</a></p>
             
         </div>

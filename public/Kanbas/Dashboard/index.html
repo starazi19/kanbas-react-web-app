@@ -1,87 +1,150 @@
 <html>
 <head>
-    <link href="/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/Kanbas/Courses/CourseNavigation/index.css" rel="stylesheet"/>
     <link href="/Kanbas/KanbasNavigation/index.css" rel="stylesheet"/>
     <link href="../Dashboard/index.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div class="row">
-        <div class="col d-none d-md-block">
+        <div class="col-1 d-none d-lg-block">
             <!--Kanbas Navigation-->
+            <h1 style="color: red; float: left; background-color: black; padding: 7px; font-family: 'Times New Roman', Times, serif; text-indent: 10px; font-size: 4rem;">N</h1>
             <ul class="wd-kanbas-navigator">
                 <li>
-                    <a href="/Kanbas/Account/Profile/screen.html">Account</a>
+                    <a href="/Kanbas/Account/Profile/screen.html">
+                    <i class="fa-solid fa-user"></i> <br />
+                    Account</a>
                 </li>
                 <li class="active">
-                    <a href="/Kanbas/Dashboard/index.html">Dashboard</a>
+                    <a href="/Kanbas/Dashboard/index.html">
+                    <i class="fa-solid fa-gauge-high"></i> <br />
+                    Dashboard</a>
                 </li>
                 <li>
-                    <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
+                    <a href="/Kanbas/Courses/Home/screen.html">
+                    <i class="fa-solid fa-book"></i> <br />
+                    Courses</a>
                 </li>
                 <li>
-                    <a href="#">Calendar</a>
+                    <a href="#">
+                    <i class="fa-solid fa-calendar-days"></i> <br />
+                    Calendar</a>
                 </li>
                 <li>
-                    <a href="#">Inbox</a>
+                    <a href="#">
+                    <i class="fa-solid fa-inbox"></i> <br />
+                    Inbox</a>
                 </li>
                 <li>
-                    <a href="#">History</a>
+                    <a href="#">
+                    <i class="fa-solid fa-clock"></i> <br />
+                    History</a>
                 </li>
                 <li>
-                    <a href="#">Studio</a>
+                    <a href="#">
+                    <i class="fa-solid fa-desktop"></i> <br />
+                    Studio</a>
                 </li>
                 <li>
-                    <a href="#">Commons</a>
+                    <a href="#">
+                    <i class="fa-solid fa-right-from-bracket"></i> <br />
+                    Commons</a>
                 </li>
                 <li>
-                    <a href="#">Help</a>
+                    <a href="#">
+                    <i class="fa-solid fa-circle-question"></i> <br />
+                    Help</a>
                 </li>
-                </ul>
+            </ul>
         </div>
-        <div class="col-11">
+        <div class="col d-lg-10">
             <!--Cards-->
                 <h1>Dashboard</h1>
-                <h2>Courses</h2>
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 wd-course-card-grid">
+                <h2>Published Courses (4)</h2>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 wd-course-card-grid">
                     <div class="col">
                         <div class="card h-100">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <img class="card-img-top" src="/yellow1.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">IS4800 - Empirical Research Design</h5>
-                            <p class="card-text">Section Info</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <h5 class="card-title">CS4550 12631 WEB DEVELOPMENT SEC 01 FALL 2023</h5>
+                            <p class="card-text">CS4550.12631.202410</p>
+                            <p class="card-text"><small class="text-muted">202410_1 Fall 2023 Semester Full Term</small></p>
+                            <i class="fa-regular fa-pen-to-square"></i> <i class="fa-regular fa-comments"></i> <i class="fa-regular fa-folder-closed"></i>
                         </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <img class="card-img-top" src="/yellow2.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">CS4550</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <h5 class="card-title">
+                                <a href="/Kanbas/Courses/Home/screen.html">IS4800 16859 EMPIRICAL RESEARCH METHODS</a></h5>
+                            <p class="card-text">IS4800.16859.202410</p>
+                            <p class="card-text"><small class="text-muted">202410_1 Fall 2023 Semester Full Term</small></p>
+                            <i class="fa-regular fa-pen-to-square"></i> <i class="fa-regular fa-comments"></i> <i class="fa-regular fa-folder-closed"></i>
                         </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <img class="card-img-top" src="/yellow4.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">CS4530</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <h5 class="card-title">
+                                <a href="/Kanbas/Courses/Home/screen.html">CS4530.19752.MERGED.17299 FUNDAMENTALS OF SOFTWARE ENGINEERING</a></h5>
+                            <p class="card-text">CS4530.19752.MERGED.17299</p>
+                            <p class="card-text"><small class="text-muted">202410_1 Fall 2023 Semester Full Term</small></p>
+                            <i class="fa-regular fa-pen-to-square"></i> <i class="fa-regular fa-comments"></i> <i class="fa-regular fa-folder-closed"></i>
                         </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <img class="card-img-top" src="/yellow3.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <h5 class="card-title">
+                                <a href="/Kanbas/Courses/Home/screen.html">CS4550 19753 WEB DEVELOPMENT SEC 02 FALL 2023 [BOS-1-TR]</a></h5>
+                            <p class="card-text">CS4550.19753.202410</p>
+                            <p class="card-text"><small class="text-muted">202410_1 Fall 2023 Semester Full Term</small></p>
+                            <i class="fa-regular fa-pen-to-square"></i> <i class="fa-regular fa-comments"></i> <i class="fa-regular fa-folder-closed"></i>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                        <img class="card-img-top" src="/yellow5.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="/Kanbas/Courses/Home/screen.html">CS3800 61554 THEORY OF COMPUTATION SEC 01 SUMMER 2 2023 [VTL-1-OL]</a></h5>
+                            <p class="card-text">CS3800.61554.202360</p>
+                            <p class="card-text"><small class="text-muted">202360_1 Summer 2 2023 Semester Full Term</small></p>
+                            <i class="fa-regular fa-pen-to-square"></i> <i class="fa-regular fa-comments"></i> <i class="fa-regular fa-folder-closed"></i>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                        <img class="card-img-top" src="/yellow6.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="/Kanbas/Courses/Home/screen.html">CS3000 14501 ALGORITHMS AND DATA SEC 01 FALL 2021 [BOS-1-TR]</a></h5>
+                            <p class="card-text">CS3000.14051.202210</p>
+                            <p class="card-text"><small class="text-muted">202210_1 Fall 2021 Semester Full Term</small></p>
+                            <i class="fa-regular fa-pen-to-square"></i> <i class="fa-regular fa-comments"></i> <i class="fa-regular fa-folder-closed"></i>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                        <img class="card-img-top" src="/yellow7.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="/Kanbas/Courses/Home/screen.html">CS3650 COMPUTER SYSTEMS (merged) SPRING 2023 [BOS-1-TR]</a></h5>
+                            <p class="card-text">CS3650.202330</p>
+                            <p class="card-text"><small class="text-muted">202330_1 Spring 2023 Semester Full Term</small></p>
+                            <i class="fa-regular fa-pen-to-square"></i> <i class="fa-regular fa-comments"></i> <i class="fa-regular fa-folder-closed"></i>
                         </div>
                         </div>
                     </div>

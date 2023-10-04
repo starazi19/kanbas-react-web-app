@@ -1,7 +1,8 @@
-ul.wd-course-navigation .list-group{
+ul.wd-course-navigation.list-group{
     border-radius: 0px;
-    margin: none;
+    margin-top: 25px;
   }
+
   ul.wd-course-navigation .list-group-item {
     border: none;
     list-style-type: none;
@@ -25,11 +26,11 @@ ul.wd-course-navigation .list-group{
     color: black;
   }
 
-  .wd-modules{
+  .wd-assignments{
     margin-top: 20px;
   }
 
-  .wd-modules h4 {
+  .wd-assignments h4 {
     text-indent: 25px;
     font-size: 1rem;
     font-weight: bold;
@@ -43,7 +44,7 @@ ul.wd-course-navigation .list-group{
     padding-right: 100%;
   }
 
-  .wd-modules .list-group-item {
+  .wd-assignments .list-group-item {
     border: 1px solid #c7cdd1;
     background: #f5f5f5;
     padding: 12px 6px 12px 10px;
@@ -52,27 +53,70 @@ ul.wd-course-navigation .list-group{
     border-left: 2px solid green;
   }
 
-  .wd-modules .list-group-item-secondary {
+  .wd-assignments .list-group-item-secondary {
     color: #41464b;
     background-color: #e2e3e5;
     border-left: none;
     border: 1px solid black;
   }
 
-  .wd-modules .list-group-item h5{
+  .wd-assignments .list-group-item h5{
     font-size: 1rem;
     font-weight: regular;
     text-decoration: none;
     color: #2D3B45;
   }
 
-  .wd-modules .list-group-item a{
+  .wd-assignments .list-group-item a{
     text-decoration: none;
   }
 
-  .wd-modules .list-group-item p{
+  .wd-assignments .list-group-item p{
     font-size: 0.8rem;
     font-weight: regular;
     text-decoration: none;
     color: #3b4f5e;
+  }
+
+  ul.wd-modules{
+    border-left: 2px solid green;
+    padding-left: none;
+  }
+
+  .wd-modules .list-group-item {
+    background: #f5f5f5;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-left: none;
+    padding: 4px;
+  }
+
+
+  .list-group-item h5{
+    font-size: 1rem;
+    font-weight: regular;
+    text-decoration: none;
+    color: #2D3B45;
+    background-color: #c7cdd1;
+    padding: 5px;
+  }
+
+  .wd-modules .list-group-item a{
+    text-decoration: none;
+    color: red;
+  }
+
+  ol.breadcrumb li.breadcrumb-item a{
+    color: red;
+    text-decoration: none;
+  }
+
+  ol.breadcrumb li.breadcrumb-item-active a{
+    color: black;
+    text-decoration: none;
+  }
+
+  ol.breadcrumb {
+    margin-top: 10px;
+    padding: 5px;
   }
