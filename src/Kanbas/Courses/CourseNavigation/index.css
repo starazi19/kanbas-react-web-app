@@ -1,0 +1,31 @@
+.wd-course-navigation {
+    border-radius: 0px;
+    margin-top: 25px;
+    margin-left: 2px;
+  }
+
+.wd-course-navigation a.list-group-item{
+    border: none;
+    list-style-type: none;
+    font-size: .8em;
+    color: red;
+    text-decoration: none;
+    border-radius: 0px;
+}
+
+.wd-course-navigation a.list-group-item.false{
+    color: red;
+    text-decoration: none;
+}
+
+.wd-course-navigation a.list-group-item.active{
+    color: black;
+    background-color: white;
+    border-left: 2px solid black;
+    list-style-type: none;
+}
+  
+
+/* .wd-course-navigation list-group-item Link {
+    color: black;
+} */

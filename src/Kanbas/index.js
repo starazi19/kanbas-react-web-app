@@ -19,4 +19,5 @@ function Kanbas() {
     </div>
   );
 }
+
 export default Kanbas;

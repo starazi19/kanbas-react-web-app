@@ -1,0 +1,23 @@
+.wd-course-card-grid.col{
+    width: 100px;
+}
+
+.wd-course-card-grid a h5.card-title {
+    font-size: .8em;
+    color: green;
+    text-decoration: none;
+}
+.wd-course-card-grid a {
+    text-decoration: none;
+}
+
+p.card-text {
+    font-size: 0.8em;
+    text-emphasis-style: bold;
+    color: grey;
+}
+
+.wd-course-card-grid i {
+    padding: 2px;
+    color: grey;
+}

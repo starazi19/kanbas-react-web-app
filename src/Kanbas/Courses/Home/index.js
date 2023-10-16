@@ -1,12 +1,15 @@
 import ModuleList from "../Modules/ModuleList";
+import Status from "../Status/";
 
 
 function Home() {
   return (
     <div>
-      <h2>Home</h2>
-      <ModuleList />
-      <h2>Status</h2>
+        <div className="col d-lg-10">
+          <h2>Home</h2>
+          <ModuleList />
+        </div>
+      <Status />
     </div>
   );
 }

@@ -1,25 +1,27 @@
 import { Link, useLocation } from "react-router-dom";
-
-// figure out how to import fontawesome + bootstrap
+//import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+//import {faCoffee} from "@fortawesome/fontawesome-free-solid";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import './index.css';
 
 function KanbasNavigation() {
   const links = ["Account", "Dashboard", "Courses", "Calendar", "Inbox", "History", "Studio", "Commons", "Help"];
-  const icons = ["fa-solid fa-user","fa-solid fa-gauge-high", "fa-solid fa-book", "fa-solid fa-calendar-days", "fa-solid fa-inbox", "fa-solid fa-clock", "fa-solid fa-desktop", "fa-solid fa-right-from-bracket", "fa-solid fa-circle-question"];
+  const icons = ["fas fa-user","fas fa-gauge-high", "fas fa-book", "fas fa-calendar-days", "fas fa-inbox", "fas fa-clock", "fas fa-desktop", "fas fa-right-from-bracket", "fas fa-circle-question"];
   const { pathname } = useLocation();
   return (
-    <ul className="list-group">
+    <div className="wd-kanbas-navigator">
+      <h1>N</h1>
       {links.map((link, index) => (
         <Link
           key={index}
           to={`/Kanbas/${link}`}
           className={`list-group-item ${pathname.includes(link) && "active"}`}>
-          {icons.map((icon, index) => (
-            <i key={index} className={icon}></i>
-          ))}
+          <i className={icons[index]}></i>
+          <br />
           {link}
         </Link>
       ))}
-    </ul>
+    </div>
   );
 }
 export default KanbasNavigation;
