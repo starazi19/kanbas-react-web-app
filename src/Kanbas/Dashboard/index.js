@@ -2,19 +2,21 @@ import { Link } from "react-router-dom";
 import db from "../Database";
 import "@fortawesome/fontawesome-free";
 import "./index.css";
-
-
+import yellow1 from "../Images/yellow1.jpg";
+import yellow2 from "../Images/yellow2.jpg";
+import yellow3 from "../Images/yellow3.jpg";
 
 function Dashboard() {
   const courses = db.courses;
+  const imgs = [yellow1, yellow2, yellow3];
   return (
     <div>
       <h1>Dashboard</h1>
       <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 wd-course-card-grid">
-        {courses.map((course) => (
+        {courses.map((course, index) => (
           <div className="col">
             <div className="card h-100">
-            <img className="card-img-top" src={course.img} alt="yellow rectangle"></img>
+            <img className="card-img-top" src={imgs[index]} alt="yellow rectangle"></img>
             <div className="card-body">
                 <Link
                   key={course._id}

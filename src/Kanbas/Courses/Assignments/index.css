@@ -1,6 +1,8 @@
 
 .wd-assignments{
     margin-top: 20px;
+    margin-right: 10px;
+    border-right: 1px solid black;
   }
 
 .wd-assignments.btn-group {

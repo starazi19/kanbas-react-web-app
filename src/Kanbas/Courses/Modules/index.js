@@ -1,10 +1,14 @@
 import ModuleList from "./ModuleList";
+import Status from "../Status";
 
 function Modules() {
   return (
     <div>
       <h2>Modules</h2>
-      <ModuleList />
+      <div className="container flex-row">
+        <ModuleList />
+        <Status />
+      </div>
     </div>
   );
 }

@@ -25,7 +25,7 @@ function AssignmentEditor() {
             className="btn btn-danger">
         Cancel
       </Link>
-      <button onClick={handleSave} className="btn btn-success me-2">
+      <button onClick={handleSave} className="btn btn-light me-2">
         Save
       </button>
     </div>
