@@ -2,6 +2,8 @@
     border-radius: 0px;
     margin-top: 70px;
     margin-left: 2px;
+    padding-right: 0px;
+    max-width: 40%;
   }
 
 .wd-course-navigation a.list-group-item{
@@ -11,6 +13,7 @@
     color: red;
     text-decoration: none;
     border-radius: 0px;
+    padding-right: 0px;
 }
 
 .wd-course-navigation a.list-group-item.false{

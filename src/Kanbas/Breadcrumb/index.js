@@ -6,28 +6,39 @@ import "./index.css";
 
 function Breadcrumb() {
     const pages = ["Modules", "Assignments", "Grades", "Home"]
-    const assignments = db.assignments;
-    const { assignmentId } = useParams();
-    const assignment = assignments.find((assignment) => assignment._id === assignmentId);
     const courses = db.courses;
     const { pathname } = useLocation();
     const { courseId } = useParams();
     const course = courses.find((course) => course._id === courseId);
+    const assignments = db.assignments;
+    const { assignmentId } = useParams();
+    const assignment = assignments.find((assignment) => assignment._id === assignmentId);
+
     return (
         <div className="wd-breadcrumb">
             <Link to={`/Kanbas/Courses/${courseId}`}>
-                {course._id}
+                {course.number}
             </Link>
             <i className="fa-solid fa-chevron-right"></i>
             {pages.map((page) => (
-                pathname.includes(page) && <h2>{page}</h2>
+                pathname.includes(page) && 
+                <Link to={`/Kanbas/Courses/${courseId}/${page}`}>
+                   <h2>{page}</h2>
+                </Link>
             ))}
-            {pathname.includes({assignmentId}) &&
+            {/* {assignments.map((assignment) => (
+                pathname.includes(assignmentId) &&
                 <div>
                     <i className="fa-solid fa-chevron-right"></i>
                     <h2>{assignment.title}</h2>
                 </div>
-            }
+            ))} */}
+            {assignment && pathname.includes(assignmentId) && (
+                <div>
+                    <i className="fa-solid fa-chevron-right"></i>
+                    <h2>{assignment.title}</h2>
+                </div>
+            )}
         </div>
     );
 }
