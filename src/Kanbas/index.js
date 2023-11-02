@@ -19,9 +19,9 @@ function Kanbas() {
                 _id: new Date().getTime() }]);
   };
   const deleteCourse = (index) => {
-    const newCourses = courses.filter((course, i) => i !== index);
+    const newCourses = courses.filter((course) => course._id !== index);
     setCourses(newCourses);
-  }
+  };
   const updateCourse = () => {
     setCourses(
       courses.map((c) => {

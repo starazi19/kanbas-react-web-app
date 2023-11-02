@@ -38,3 +38,17 @@
     margin: 5px;
     padding-top: 10px;
 }
+
+.wd-modules .fa-solid.fa-trash.fa-lg{
+    color: red;
+    padding: 5px;
+    margin-right: 5px;
+    padding-top: 10px;
+}
+
+.wd-modules .fa-solid.fa-square-pen.fa-lg{
+    color: goldenrod;
+    padding: 5px;
+    margin: 5px;
+    padding-top: 10px;
+}

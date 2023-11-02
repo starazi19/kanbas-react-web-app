@@ -1,6 +1,5 @@
-.wd-course-card-grid.col{
-    width: 100px;
-}
+
+
 
 .wd-course-card-grid a h5.card-title {
     font-size: .8em;
@@ -17,7 +16,35 @@ p.card-text {
     color: grey;
 }
 
-.wd-course-card-grid i {
-    padding: 2px;
-    color: grey;
+
+button.btn.btn-outline-secondary {
+    font-size: 0.8em;
+    border-color: grey;
+    border-radius: 3px;
+    padding: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin: 2px;
+}
+
+button.btn.btn-outline-danger {
+    font-size: 0.8em;
+    border-color: red;
+    border-radius: 3px;
+    padding: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin: 2px;
+}
+
+.wd-course-card-grid .fa-solid.fa-square-pen.fa-lg {
+    color: goldenrod;
+    padding: 5px;
+    float: left;
+}
+
+.wd-course-card-grid .fa-solid.fa-trash.fa-lg {
+    color: red;
+    padding: 5px;
+    float: right;
 }
