@@ -10,6 +10,7 @@ import axios from "axios";
 
 function Courses() {
   const { courseId } = useParams();
+  // change below to render.com url????
   const URL = "http://localhost:4000/api/courses";
   const [course, setCourse] = useState({});
   const findCourseById = async (courseId) => {
