@@ -27,27 +27,27 @@ function Kanbas() {
   useEffect(() => {
     findAllCourses();
   }, []);
-  const deleteCourse = async (course) => {
+  const deleteCourse = async (courseId) => {
+    console.log (courseId)
     const response = await axios.delete(
-      `${URL}/${course._id}`
+        `${URL}/${courseId}`
     );
-    setCourses(courses.filter(
-      (c) => c._id !== course._id));
+    setCourses(courses.filter((c) => c._id !== courseId));
   };
-  const updateCourse = async (course) => {
+  const updateCourse = async() => {
     const response = await axios.put(
-      `${URL}/${course._id}`,
-      course
+        `${URL}/${course._id}`,
+        course
     );
     setCourses(
-      courses.map((c) => {
-        if (c._id === course._id) {
-          return course;
-        }
-        return c;
-      })
+        courses.map((c) => {
+            if (c._id === course._id) {
+                return course;
+            } else {
+                return c;
+            }
+        })
     );
-    setCourse({ name: "" });
   };
   return (
   <Provider store={store}>
