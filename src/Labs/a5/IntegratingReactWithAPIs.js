@@ -4,7 +4,7 @@ import axios from "axios";
 function IntegratingReactWithAPIs() {
     const [welcome, setWelcome] = useState("");
     const fetchWelcome = async () => {
-        const response = await axios.get("http://localhost:4000/a5/welcome");
+        const response = await axios.get("https://kanbas-node-server-app-8h9s.onrender.com/a5/welcome");
         setWelcome(response.data);
     };
     useEffect(() => {
