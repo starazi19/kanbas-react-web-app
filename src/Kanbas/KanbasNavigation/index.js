@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, Navigate } from "react-router-dom";
 //import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 //import {faCoffee} from "@fortawesome/fontawesome-free-solid";
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -21,6 +21,7 @@ function KanbasNavigation() {
           {link}
         </Link>
       ))}
+      
     </div>
   );
 }
