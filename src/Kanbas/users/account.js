@@ -20,7 +20,7 @@ function Account() {
         fetchAccount();
     }, []);
     return (
-        <div classname="w-50">
+        <div className="w-50">
              <h1>Account</h1>
              {/* <btn className="btn btn-warning w-100" onClick={() => navigate("/Kanbas/signin")}>Signin</btn> */}
             {account && (
